@@ -1,0 +1,128 @@
+body{
+    background-image: linear-gradient(40deg,black,rgb(92, 91, 91),black);
+    background-color: gray;
+}
+p,body{
+    margin: 0;
+    padding: 0;
+    padding-top: 0.1cm;
+}
+#gameContainer{
+    text-align: center;
+}
+#gameBoard{
+    border:2px solid black;
+    border-top:  10px solid darkred;
+    border-bottom:  10px solid darkred;
+}
+#scoreText{
+    font-family: monospace,cursive;
+    font-size: 60px;
+}
+#resetBtn{
+    font-family: cursive,monospace;
+    font-size: 22px;
+    width: 100px;
+    height: 40px;
+    border: 4px solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#gameinform{
+    display: grid;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(60deg,black,rgb(92, 91, 91),black);
+    align-items:center;
+    justify-content: center;
+    
+}
+#instruction{
+    height: 14cm;
+    width: 10cm;
+    background-color: black;
+    color: white;
+    position: relative;
+    
+}
+#instruction > section{
+    display: grid;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+    height: 2cm;
+    width: 2cm;
+    background-color: aliceblue;
+    border-radius: 2cm;
+    margin-left: 4cm;
+    margin-top: 3px;
+    font-size: 1cm;
+    color: black;
+    transition: color 1s;
+}
+
+
+.instruct_content{
+padding-left: 1cm;
+line-height: 0.6cm;
+}
+#start{
+    border: 3px solid black;
+    border-radius: 1cm;
+    height: 1cm;
+    width: 4cm;
+    margin-left: 3cm;
+    cursor: pointer;
+}
+#winner{
+    display: grid;
+    position: absolute;
+    background-color: gold;
+    height: 8cm;
+    left: -1cm;
+    right: -1cm;
+    top: 3cm;
+    color: black;
+    text-align: center;
+    border: 5px solid black;
+    border-top-left-radius: 1cm;
+    border-top-right-radius: 1cm;
+    border-bottom-right-radius: 6cm;
+    border-bottom-left-radius: 6cm;
+    visibility: hidden;
+
+}
+#im{
+    width: 11cm;
+    height:5cm ;
+    object-fit:contain
+}
+label{
+    padding-right: 1.5cm;
+}
+#holder{
+    position: absolute;
+    height: 3.7cm;
+    width: 1.5cm;
+    background-color: gold;
+    pointer-events: none;
+    top: 7.5cm;
+    left: 5.2cm;
+    
+}
+#canvascontainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 5cm;
+    visibility: hidden;
+}
+#my-canvas{
+    pointer-events: none;
+}
+
+
+

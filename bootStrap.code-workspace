@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../vs project"
+		},
+		{
+			"path": "../../Resume"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "practice"
+	}
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ping_pong</title>
+    <link rel="stylesheet" href="./ping_pong.css">
+</head>
+<body>
+    <div id="gameinform">
+        
+        <div id="instruction">
+            <div id="winner">
+                <h1 id="win"></h1>
+                <div id="holder"></div>
+                <div id="image_cont"><img id="im" src="./Winner-PNG-Free-File-Download.png" alt=""></div>
+                
+            </div>
+
+            <section id="round"><p id="countdown">5</p></section>
+           <div class="instruct_content">
+
+            <h2>POINTS PER SET</h2>
+            <input type="radio" name="points" id="p25" ><label >25</label>
+            <input type="radio" name="points" id="p15" checked><label >15</label><br>
+            <input type="radio" name="points" id="p10"><label >10</label>
+            <input type="radio" name="points" id="p5"><label >5</label>
+            <h2>PLAYER 1</h2>
+            <ul>
+                <li>use letter "W" for UP</li>
+                <li>use letter "S" for DOWN</li>
+            </ul>
+           
+            <h2>PLAYER 2</h2>
+            <ul>
+                <li>use &uarr; for UP</li>
+                <li>use &darr; for DOWN</li>
+            </ul>
+        </div>    
+        <button id="start" onclick="countDown()">START</button>
+        </div>
+    </div>
+
+    <div id="gameContainer">
+
+        <canvas id="gameBoard" height="500" width="500"></canvas>
+        <div id="scoreText">0 : 0</div>
+        <button id="resetBtn">Reset</button>
+    </div>
+    <div id="canvascontainer">
+    <canvas id="my-canvas"></canvas>
+</div>
+    <script src="./index.min.js"> </script>
+
+    <script src="./ping_pong.js"></script>
+    <script>
+        var confettiSettings = { target: 'my-canvas' };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+    
+    
+    
+       </script>
+</body>
+</html>
